@@ -4,7 +4,6 @@ import requests
 import telebot
 
 bot = telebot.TeleBot(config.token)
-print(config.token)
 
 
 @bot.message_handler(commands=['help'])
