@@ -6,6 +6,8 @@ import telebot
 bot = telebot.TeleBot(config.token)
 
 
+# Узнать название растение по фото, а также просто фактики
+
 @bot.message_handler(commands=['help'])
 def start_message(message):
     bot.send_message(message.chat.id, 'My name is PlantBot. I can help to identify plants.' + '\n'
